@@ -1,0 +1,29 @@
+---
+title: "README"
+author: "WWoelmer"
+date: "January 31, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+The dataset I will be using in this class is a historical time series dataset of Beaverdam Reservoir a drinking water reservoir in Vinton, VA. Data has been collected by the Carey Lab on a weekly basis in the summer to a monthly basis during winter months from 2013 to present. Variables include nutrient chemistry (nitrogen, phosphorus, and carbon) at the deep hole of the reservoir; water quality variables including conductivity, specific conductivity, dissolved oxygen, pH, chlorophyll, and water temperature from the surface to the bottom of the reservoir; meteorological variables for the region including shortwave radiation, precipitation, windspeeds, and air temperature. 
+
+```{r}
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
