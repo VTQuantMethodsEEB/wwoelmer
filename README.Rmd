@@ -23,12 +23,7 @@ Created data file: BVR_CTD.csv
 Description: create 'bins' of CTD depth profiles, make some basic calculations
 
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Lesson 3 Feb 13, 2019
+R script: week3_WWoelmer.R
+input data file: BVR_CTD.csv
+Description: plotted several visualizations of temperature and chlorophyll data by depths in BVR reservoir
