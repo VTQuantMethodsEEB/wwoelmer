@@ -27,6 +27,12 @@ for(i in 1:length(site50$Depth_m)){
   }
 }
 
+#this for loop doesn't run for me. change in data frame? 
+#i also don't think you need a for loop for this, you should be able to write with square brackets 
+#e.g. I think you could do:
+#site50$Temp_C[site50$ORP_mV<0]=NA
+#unique(site50$Temp_C)
+
 layer = data.frame(site50)
 
 #since the ctd takes so many measurements, select the measurement closest to these depths
@@ -46,6 +52,7 @@ layer11 <- layer %>% group_by(Date) %>% slice(which.min(abs(as.numeric(Depth_m) 
 layer12 <- layer %>% group_by(Date) %>% slice(which.min(abs(as.numeric(Depth_m) - 11.0)))
 layer13 <- layer %>% group_by(Date) %>% slice(which.min(abs(as.numeric(Depth_m) - 12.0)))
 
+#would ?cut or ?findInterval be helpful here?
 
 ## replace name of depth with the selected layer depths for ease of merging later
 layer1$Depth_m <- 0.1 
@@ -80,7 +87,7 @@ write.csv(bvr, "BVR_CTD.csv", row.names = FALSE)
 # calculate the mean over the entire time series of chlorophyll on each day
 mean <- bvr %>% group_by(Date) %>%
   summarise(mean_chl = mean(Chla_ugL))
-
+#better to call this something other than mean because you can accidentally write over the mean function
 
 
 
