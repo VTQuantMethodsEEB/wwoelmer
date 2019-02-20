@@ -28,6 +28,10 @@ for(i in 1:length(site50$Depth_m)){
 }
 
 #this for loop doesn't run for me. change in data frame? 
+
+# WW: if spits out an error for ORP because there are no values less then 0
+# but it should have gotten rid of the other unecessary data
+
 #i also don't think you need a for loop for this, you should be able to write with square brackets 
 #e.g. I think you could do:
 #site50$Temp_C[site50$ORP_mV<0]=NA
