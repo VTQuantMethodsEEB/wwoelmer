@@ -1,0 +1,43 @@
+---
+title: "Lesson1_EEData_WWoelmer"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+library(dplyr)
+data <- read.csv("C:/Users/wwoel/Dropbox/FCR_TimeSeries/FCR/FCR_VT_data_2013_2017.csv")
+data$Date <- as.Date(data$Date)
+###selecting things###
+head(data)
+somerows <- data[data$Date>"2015-05-05",]
+deep <- data[data$Depth==9,]
+chl <- data[,1:5]
+
+# some calcs
+chl <- chl %>% group_by(Date) %>%
+  mutate(Chla_mean = mean(Chla_ugL))
+  
+
+#this is a trick to "count" the number individuals sampled by summing with aggregate
+#this creates a long format dataframe.
+
+md_chl <- aggregate(data$Chla_ugL, by = list(data$Date), FUN = mean)
+colnames(md_chl) <- c("Date", "MeanDaily_Chl")
+
+# mead daily chl for 2013 only
+md_chl_2013 <- md_chl[md_chl$Date<"2013-12-31",]
+
+tab1 <- table(md_chl_2013$Date,md_chl_2013$MeanDaily_Chl)
+
+
+
+
+
+```
+
