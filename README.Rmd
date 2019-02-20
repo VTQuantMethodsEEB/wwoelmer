@@ -28,3 +28,11 @@ Lesson 3 Feb 13, 2019
 R script: week3_WWoelmer.R
 input data file: BVR_CTD.csv
 Description: plotted several visualizations of temperature and chlorophyll data by depths in BVR reservoir
+
+--------------------------
+Week 4 Feb 20, 2019
+R script: none
+Assignment: create a hypothesis about your data and state how you would test it statistically
+Submitted on canvas
+
+--------------------------
