@@ -36,3 +36,7 @@ Assignment: create a hypothesis about your data and state how you would test it 
 Submitted on canvas
 
 --------------------------
+Week 5, Feb 28, 2019
+R script: Week5_StatisticalTests_wwoelmer.R
+input data file: BVR_CTD.csv
+Description: formed two hypotheses and tested them both using 1) a for loop and 2) pearson's correlation. Hypotheses stated within R script
