@@ -40,3 +40,9 @@ Week 5, Feb 28, 2019
 R script: Week5_StatisticalTests_wwoelmer.R
 input data file: BVR_CTD.csv
 Description: formed two hypotheses and tested them both using 1) a for loop and 2) pearson's correlation. Hypotheses stated within R script
+
+-------------------------
+Week 6, Feb 28, 2019
+R script: Week6_distributions_wwoelmer.R
+input data file: BVR_CTD.csv
+Description: determined the distribution of chlorophyll a, created a pseudo distribution with the same shape and rate, and then asked some questions about the distribution
