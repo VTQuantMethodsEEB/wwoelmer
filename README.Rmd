@@ -14,7 +14,10 @@ knitr::opts_chunk$set(echo = TRUE)
 The dataset I will be using in this class is a historical time series dataset of Beaverdam Reservoir a drinking water reservoir in Vinton, VA. Data has been collected by the Carey Lab on a weekly basis in the summer to a monthly basis during winter months from 2013 to present. Variables include nutrient chemistry (nitrogen, phosphorus, and carbon) at the deep hole of the reservoir; water quality variables including conductivity, specific conductivity, dissolved oxygen, pH, chlorophyll, and water temperature from the surface to the bottom of the reservoir; meteorological variables for the region including shortwave radiation, precipitation, windspeeds, and air temperature. 
 
 -------------
-****KEL: Can you add week 1? Thanks!***
+Week 1
+R script: Lesson1_Jan24_2019.Rmd
+Input data file: FCR_VT_data_2013_2017.csv
+Did some basic data manipulations and calculations
 ----------------------
 
 
@@ -23,8 +26,7 @@ Lesson 2 Jan 31, 2019
 R script:Lesson 2 Assignment
 Input data file: CTD_Meta_13_17.csv
 Created data file: BVR_CTD.csv
-Description: create 'bins' of CTD depth profiles, make some basic calculations
-#can you add a little more detail for what you were doing this week? Is your data tidy? what is your goal? why do you want bins, etc? 
+Description: create 'bins' of CTD depth profiles, make some basic calculations. This bins were created because the CTD takes super high-frequency measurements, and in order to think about the data more clearly, I've selected the closest measurement to given depths. I think the data is tidy! (??)
 
 -----------------------
 Lesson 3 Feb 13, 2019
@@ -49,3 +51,13 @@ Week 6, Feb 28, 2019
 R script: Week6_distributions_wwoelmer.R
 input data file: BVR_CTD.csv
 Description: determined the distribution of chlorophyll a, created a pseudo distribution with the same shape and rate, and then asked some questions about the distribution
+
+--------------------------
+Week 7 & 8, Apr 3, 2019
+R Script: Week8_LinearModels_wwoelmer.R
+input data file: BVR_CTD.csv
+Description: 
+Part1-developed a univariate linear model between chlorophyll-a and water temperature,
+chl-a is not normally distributed so log-transformed first, still not a great linear model!
+Part 2-developed an additive and interactive model of chlorophyll-a and water temperature + turbidity
+Both models do a poor job of predicting chlorophyll-a
