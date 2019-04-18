@@ -61,3 +61,12 @@ Part1-developed a univariate linear model between chlorophyll-a and water temper
 chl-a is not normally distributed so log-transformed first, still not a great linear model!
 Part 2-developed an additive and interactive model of chlorophyll-a and water temperature + turbidity
 Both models do a poor job of predicting chlorophyll-a
+
+-----------------------------
+Week 10 & 11, Apr 17, 2019
+R Script: Week10_11_WWoelmer.R
+input data file: BVR_CTD.csv
+Description
+Part 1: developed a generalized linear model to test the drivers of chlorophylla in Beaverdam Reservoir.
+Driver variables tested include water temperature, depth, and turbidity. turbidity was a significant positive driver of surface (0.1m depth) chlorophyll
+Part 2: used a likelihood ratio test and AIC to test the significance of several generalized linear models. Both tests confirmed that no model combinations were significant. 
