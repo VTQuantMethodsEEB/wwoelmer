@@ -70,3 +70,10 @@ Description
 Part 1: developed a generalized linear model to test the drivers of chlorophylla in Beaverdam Reservoir.
 Driver variables tested include water temperature, depth, and turbidity. turbidity was a significant positive driver of surface (0.1m depth) chlorophyll
 Part 2: used a likelihood ratio test and AIC to test the significance of several generalized linear models. Both tests confirmed that no model combinations were significant. 
+
+---------------------------------
+Week 12, Apr 23, 2019
+R Script: Week12_WWoelmer.R
+input data file: BVR_CTD.csv
+Description:
+This week I developed a mixed effects model for chlorophyll-a concentrations in Beaverdam Reservoir. To control for the effect of season on changes in chla concentrations, I created a 'month' factor that was included as a random effect in my mixed effects model. I used two fixed effects, turbidity and water temperature. Both fixed effects have significant positive effects on chla. 
