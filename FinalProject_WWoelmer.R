@@ -22,4 +22,4 @@
 #Include statistical results as 1) either in the text, 2) in main text tables, or 3) as supplemental 
 #tables as you would in a real paper (more on this later).
 #Discussion (what do your results mean, future statistical analyses to be conducted, 
-#what this tells us about the world; bulleted is okay)
+# what this tells us about the world; bulleted is okay)
