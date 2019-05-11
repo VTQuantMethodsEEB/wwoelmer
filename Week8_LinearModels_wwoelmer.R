@@ -55,6 +55,7 @@ points(pred, col = 'black')
 
 # now an interactive model
 # Hypothesis: chl is driven by the interaction btw water temperature and turbidity (water temperature and turbidity influence each other)
+#Kind of: This says that the effect of temperature on chl depends on turbidity.
 lm3 <- lm(chl_log~Temp_C*Turb_NTU, data = bvr)
 summary(lm3)
 plot(lm3)
@@ -65,5 +66,6 @@ pred3 <- predict(lm3)
 plot(pred3)
 plot(bvr$chl_log, col ='red')
 points(pred3, col = 'black')
+#this isn't a great way to display two continous variables - it would be easier to see this if you showed something more simiar to what "allEffects" shows you
 # the interactive model seems to do a slightly better job at predicting chl than the additive model only,
 # but neither of these are good models!
